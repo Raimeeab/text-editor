@@ -12,26 +12,26 @@ const initdb = async () =>
     },
   });
 
-// POST to db
-export const postDb = async (content)  => {
-  console.log('Post to the database');
+// // POST to db
+// export const postDb = async (content)  => {
+//   console.log('Post to the database');
 
-  // Create a connection to the database database and version we want to use.
-  const jateDb = await openDB('jate', 1);
+//   // Create a connection to the database database and version we want to use.
+//   const jateDb = await openDB('jate', 1);
 
-  // Create a new transaction and specify the database and data privileges.
-  const tx = jateDb.transaction('jate', 'readwrite');
+//   // Create a new transaction and specify the database and data privileges.
+//   const tx = jateDb.transaction('jate', 'readwrite');
 
-  // Open up the desired object store.
-  const store = tx.objectStore('jate');
+//   // Open up the desired object store.
+//   const store = tx.objectStore('jate');
 
-  // Use the .add() method on the store and pass in the content.
-  const request = store.add({ content });
+//   // Use the .add() method on the store and pass in the content.
+//   const request = store.add({ content });
 
-  // Get confirmation of the request.
-  const result = await request;
-  console.log('🚀 - data saved to the database', result);
-};
+//   // Get confirmation of the request.
+//   const result = await request;
+//   console.log('🚀 - data saved to the database', result);
+// };
 
 // PUT to db
 export const putDb = async ( id, content) => {
@@ -72,7 +72,8 @@ export const getDb = async () => {
 
   // Get confirmation of the request.
   const result = await request;
-  console.log('result.value', result);
+
+  console.log('JATE data stored in the database', result);
   return result;
 };
 
