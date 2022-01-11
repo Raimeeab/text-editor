@@ -23,12 +23,11 @@ butInstall.addEventListener('click', async () => {
 
     // Reset the deferred prompt variable 
     window.deferredPrompt = null; 
-
     butInstall.classList.toggle('hidden', true); 
 });
 
 window.addEventListener('appinstalled', (event) => {
 
-    // This will clear prompt when app is installed 
+    // Clear prompt
     window.deferredPrompt = null
 });
