@@ -13,7 +13,7 @@ const initdb = async () =>
   });
 
 // PUT to db
-export const putDb = async ( id, content) => {
+export const putDb = async (content) => {
   console.log('Update the database');
 
   // Create a connection to the database database and version we want to use.
@@ -25,7 +25,7 @@ export const putDb = async ( id, content) => {
   // Open up the desired object store.
   const store = tx.objectStore('jate'); 
 
-  // Use .add() method on the store and pass in the content. 
+  // Use .put() method on the store and pass in the content. 
   const request = store.put({ id: 1, value: content }); 
 
   // Get confirmation of the request.
@@ -53,7 +53,7 @@ export const getDb = async () => {
   const result = await request;
 
   console.log('JATE data stored in the database', result);
-  return result;
+  return result?.value;
 };
 
 // Start the db
