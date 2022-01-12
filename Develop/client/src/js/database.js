@@ -53,6 +53,7 @@ export const getDb = async () => {
   const result = await request;
 
   console.log('JATE data stored in the database', result);
+  // If result is undefined, result.value can still run 
   return result?.value;
 };
 
