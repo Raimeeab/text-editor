@@ -7,7 +7,6 @@
 
 * [Description](#description)
 * [Technlogies](#technologies)
-* [Usage](#usage)
 * [Installation](#installation)
 * [Contributors](#contributors)
 * [License](#license)
@@ -18,7 +17,9 @@
 ## 📝 Description
 This is a single-page text-editor application that meets the PWA crietia. Additionally, it features a number of data presistence techniques that serve as redudancy in case one of the options is not supported by the browser and can also function offline. Using an existing application, I demonstrate my ability to implement methods for getting and storing data to an IndexedDB database. 
 
-![app-demo]()
+![app-demo](Assets/demos/demo.gif)
+
+![app-install](Assets/demos/install-demo.gif)
 
 <a name="technologies"></a>
 ## 🕹 Technologies used 
@@ -34,21 +35,18 @@ This is a single-page text-editor application that meets the PWA crietia. Additi
 
 1. Git clone this repository onto your local machine and navigate to the file on your terminal. *This can also be done by opening the file on Visual Studios and running it through the intergated terminal.*
 
-![git-clone]()
+![git-clone](Assets/demos/git-clone.gif)
 
 2. Run `npm install` to download all the required dependencies
 
-![install]()
+![install](Assets/demos/install.gif)
 
-3. To start the application, run:
+3. To start the application, run and then open your broswer to the listening port:
 
     - `npm run start`
+    - `http://localhost:3000`
 
-![npm-start]()
-
-
-<a name="usage"></a>
-## 🖥 Usage 
+![npm-start](Assets/demos/start.gif)
 
 
 <a name="contributors"></a>
