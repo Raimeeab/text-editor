@@ -1,6 +1,6 @@
 <img alt="GitHub Followers" src="https://img.shields.io/github/followers/Raimeeab"> <img alt="GitHub License" src="https://img.shields.io/apm/l/vim-mode">  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Raimeeab/text-editor">  <img alt="GitHub Commit Activity" src="https://img.shields.io/github/commit-activity/w/Raimeeab/text-editor">
 
-# E-Commerce Back End
+# 💬 Text Editor
 ---
 
 ## Table of Content 
@@ -16,41 +16,35 @@
 
 <a name="description"></a>
 ## 📝 Description
+This is a single-page text-editor application that meets the PWA crietia. Additionally, it features a number of data presistence techniques that serve as redudancy in case one of the options is not supported by the browser and can also function offline. Using an existing application, I demonstrate my ability to implement methods for getting and storing data to an IndexedDB database. 
 
-
-![app-demo](./assets/app-demo.gif)
+![app-demo]()
 
 <a name="technologies"></a>
 ## 🕹 Technologies used 
-- 
+- JavaScript 
+- nodejs
+- Express 
+- PWAs 
+- indexedDB
+- Heroku-app
 
 <a name="installation"></a>
 ## ⚙️ Installation 
-*You can download a step-by-step tutorial [here](https://github.com/Raimeeab/E-Commerce-Back-End/blob/main/assets/E-commerce%20walkthrough.mov) by clicking on the `view raw` link*
 
 1. Git clone this repository onto your local machine and navigate to the file on your terminal. *This can also be done by opening the file on Visual Studios and running it through the intergated terminal.*
 
-![git-clone](./assets/git-clone.gif)
+![git-clone]()
 
-2. In order for the app to function correctly, ensure you have the latest or most stable version of Node.js and that you've entered your MySQL details into the `.env.EXAMPLE` and rename the file to `.env`.
+2. Run `npm install` to download all the required dependencies
 
-![env-example](./assets/env.png)
+![install]()
 
-3. Run `npm install` to download all the required dependencies
-
-![install](./assets/install.gif)
-
-4. Create the schema from the MySQL shell by running: 
-    - `mysql -u root -p` (enter password if/when prompted)
-    - `source db/schema.sql`
- 
-![sql-example](./assets/schema.gif)
-
-5. To start the application, run:
+3. To start the application, run:
 
     - `npm run start`
 
-![sql-example](./assets/start.gif)
+![npm-start]()
 
 
 <a name="usage"></a>
@@ -67,7 +61,7 @@
 ## 🔖 License
 
 MIT License
-Copyright (c) [2021] [E-Commerce Back End]
+Copyright (c) [2022] [Text Editor]
 Permission is herby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limiation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject following coditions: 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
 
