@@ -17,6 +17,8 @@
 ## 📝 Description
 This is a single-page text-editor application that meets the PWA crietia. Additionally, it features a number of data presistence techniques that serve as redudancy in case one of the options is not supported by the browser and can also function offline. Using an existing application, I demonstrate my ability to implement methods for getting and storing data to an IndexedDB database. 
 
+You can find the application [here](https://peaceful-hamlet-70308.herokuapp.com/)
+
 ![app-demo](Assets/demos/demo.gif)
 
 ![app-install](Assets/demos/install-demo.gif)
